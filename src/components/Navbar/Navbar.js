@@ -12,6 +12,8 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
 
 const pages = ["Productos", "Precios", "Novedades"];
 const settings = ["Perfil", "Cuenta", "Lista", "Salir"];
@@ -124,6 +126,11 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
+
+          <ShoppingCartIcon sx={{ flexGrow: 0.2 }}>
+              <div>Hola</div>
+          </ShoppingCartIcon>
+          
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Abrir Configuración">
